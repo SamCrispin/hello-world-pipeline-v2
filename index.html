@@ -38,7 +38,6 @@
             body: raw,
             redirect: 'follow'
         };
-        window.location.href = "confirmation.html";
         // make API call with parameters and use promises to get response
         fetch("https://03bjzdc7r1.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
             .then(response => response.text())
