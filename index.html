@@ -5,7 +5,7 @@
     <title>Hello World</title>
     <style>
         body {
-            background-color: #232F3E;
+            background-color: red;
         }
         label, button {
             color: #FF9900;
@@ -40,7 +40,7 @@
         };
         window.location.href = "confirmation.html";
         // make API call with parameters and use promises to get response
-        fetch("https://k6nz7xwcvk.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
+        fetch("arn:aws:dynamodb:us-east-1:022846385542:table/example-table", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
