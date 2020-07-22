@@ -40,7 +40,7 @@
         };
         window.location.href = "confirmation.html";
         // make API call with parameters and use promises to get response
-        fetch("arn:aws:dynamodb:us-east-1:022846385542:table/example-table", requestOptions)
+        fetch("https://03bjzdc7r1.execute-api.us-east-1.amazonaws.com/dev", requestOptions)
             .then(response => response.text())
             .then(result => alert(JSON.parse(result).body))
             .catch(error => console.log('error', error));
